@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   constructor() {}
-
+  slideOpt ={
+    direction: 'horizontal',
+    slidesPerView: 1,
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  }
 }

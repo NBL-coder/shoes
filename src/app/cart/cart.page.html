@@ -1,0 +1,124 @@
+<ion-header >
+  <ion-grid class ="menu" >
+    <ion-row>
+      <ion-col size="auto">
+        <ion-button shape="round" size="default" routerLink = "/">
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col >
+        <ion-searchbar></ion-searchbar>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button shape="round" size="default" routerLink = "/cart">
+          <ion-badge slot="end">2</ion-badge>
+          <ion-icon slot="icon-only" name="cart"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--
+  <ion-row class ="sec_header">
+    <ion-col>
+      <ion-button style = "--background:none; font-size: 1.25rem;" shape="round" size="Large" routerLink = "/">
+        Cart
+        <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <h2 style = " font-size: 1.25rem;">2 items</h2>
+    </ion-col>
+  </ion-row>
+  -->
+</ion-header>
+
+<ion-content>
+  <ion-content class = "body">
+    <ion-col>
+      <ion-row class= "main_info">
+        <ion-col size="3">
+          <img alt="test" src="assets/imgs/shoes_1.png" />
+        </ion-col>
+        <ion-col>
+          <ion-row>
+            <h4 style = " font-size: 1rem; color: black" >placeholder</h4>
+          </ion-row>
+          <ion-row>
+            <ion-col size = "auto">
+              <ion-button class = "trans_btn"  fill="clear" shape="round" size="small">
+                <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+              </ion-button>
+              <ion-button  class = "trans_btn" [disabled]="true" fill="outline"shape="round" size="small" style = "color:black; width:80px;">
+                2
+              </ion-button>
+              <ion-button class = "trans_btn" fill="clear" shape="round" size="small">
+                <ion-icon slot="icon-only" name="remove-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <h4>$30</h4>
+            </ion-col>
+            
+          </ion-row>
+          <ion-row style = "position: relative;">
+
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row >
+        <ion-col class = "collor_options">
+          <span style="color:blue; font-size:50px;" class = "hex2"></span>
+           Blue
+        </ion-col>
+        <ion-col class = "collor_options">
+          <ion-badge class = "check_mark">
+            <ion-icon style = "color: white; "name="checkmark-outline"></ion-icon>
+          </ion-badge>
+          <span style="color:purple; font-size:50px;" class = "hex2"></span>
+          Purple
+        </ion-col>
+        <ion-col class = "collor_options">
+          <span style="color:brown; font-size:50px;" class = "hex2"></span>
+          Brown
+        </ion-col>
+        <ion-col class = "collor_options">
+          <span style="color:white; font-size:50px;" class = "hex2"></span>
+          White
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class = "size_options">
+          <ion-badge class = "check_mark">
+            <ion-icon style = "color: white; "name="checkmark-outline"></ion-icon>
+          </ion-badge>
+          <span class="size_icon">S</span>
+          Small
+        </ion-col>
+        <ion-col class = "size_options">
+          <span class="size_icon">M</span>
+          Medium
+        </ion-col>
+        <ion-col class = "size_options">
+          <span class="size_icon">L</span>
+          Large
+        </ion-col>
+        <ion-col class = "size_options">
+          <span class="size_icon">XL</span>
+          Extra large
+        </ion-col>
+      </ion-row>
+      <ion-row class = "update_section" style = "position: relative;">
+        <ion-button shape="square" size="small" routerLink = "/">
+          Update
+        </ion-button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+          2
+    </ion-col>
+    <ion-col>
+          3
+    </ion-col>
+  </ion-content>  
+
+</ion-content>

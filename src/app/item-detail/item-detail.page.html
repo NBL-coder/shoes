@@ -1,0 +1,132 @@
+<ion-header >
+  <ion-grid class ="menu" >
+    <ion-row>
+      <ion-col size="auto">
+        <ion-button shape="round" size="default" routerLink = "/">
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col >
+        <ion-searchbar></ion-searchbar>
+      </ion-col>
+      <ion-col size="auto">
+        <ion-button shape="round" size="default" routerLink = "/cart">
+          <ion-badge slot="end">2</ion-badge>
+          <ion-icon slot="icon-only" name="cart"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-slides class = "banner" [options]="slideOpt">
+  <ion-slide>
+    <ion-card>
+      <img alt="test" src="assets/imgs/shoes_1.png" />
+    </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <img alt="test" src="assets/imgs/shoes_1.png" />
+    </ion-card>
+  </ion-slide>
+  <ion-slide>
+    <ion-card>
+      <img alt="test" src="assets/imgs/shoes_1.png" />
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+<ion-text class = "category_name">
+  <h3>Product Name</h3>
+</ion-text>
+  <ion-text class = "category_name">
+    <h3>Description</h3>
+    <h6 style= " color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis enim ut. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Pharetra sit amet aliquam id diam maecenas. Sed risus pretium quam vulputate. Lacus suspendisse faucibus interdum posuere. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Neque sodales ut etiam sit. Nisi vitae suscipit tellus mauris a. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Eu scelerisque felis imperdiet proin fermentum. Tempus urna et pharetra pharetra massa massa ultricies. Faucibus purus in massa tempor nec feugiat nisl pretium. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam.</h6>
+  </ion-text>
+  <ion-text class = "category_name">
+    <h3>Similar Products</h3>
+  </ion-text>
+  <ion-slides class = item_tray [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+    <ion-slide class = "item" routerLink = "/item-detail">
+      <ion-card class = "small_card">
+        <ion-card-header>
+          <ion-label class = "item_status_featured">Featured</ion-label>
+        </ion-card-header>
+        <img alt="test" src="assets/imgs/shoes_1.png" />
+        
+        <ion-card-content>
+          <ion-col class = "item_info">
+            <ion-label text-wrap class = "item_descriptions">Infomation about the shoes</ion-label>
+            <ion-row class = "item_tags">
+              <ion-col style= "text-decoration:line-through">
+                $40 
+              </ion-col>
+              <ion-col>
+                $30 
+              </ion-col>
+              <ion-col>
+                <ion-icon name="heart-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-card-content>
+      </ion-card>
+    
+    </ion-slide>
+    <ion-slide class = "item" routerLink = "/item-detail">
+      <ion-card class = "small_card">
+        <ion-card-header>
+          <ion-label class = "item_status_featured">Featured</ion-label>
+        </ion-card-header>
+        <img alt="test" src="assets/imgs/shoes_1.png" />
+        
+        <ion-card-content>
+          <ion-col class = "item_info">
+            <ion-label text-wrap class = "item_descriptions">Infomation about the shoes</ion-label>
+            <ion-row class = "item_tags">
+              <ion-col style= "text-decoration:line-through">
+                $40 
+              </ion-col>
+              <ion-col>
+                $30 
+              </ion-col>
+              <ion-col>
+                <ion-icon name="heart-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-card-content>
+      </ion-card>
+    
+    </ion-slide>
+    <ion-slide class = "item" routerLink = "/item-detail">
+      <ion-card class = "small_card">
+        <ion-card-header>
+          <ion-label class = "item_status_featured">Featured</ion-label>
+        </ion-card-header>
+        <img alt="test" src="assets/imgs/shoes_1.png" />
+        
+        <ion-card-content>
+          <ion-col class = "item_info">
+            <ion-label text-wrap class = "item_descriptions">Infomation about the shoes</ion-label>
+            <ion-row class = "item_tags">
+              <ion-col style= "text-decoration:line-through">
+                $40 
+              </ion-col>
+              <ion-col>
+                $30 
+              </ion-col>
+              <ion-col>
+                <ion-icon name="heart-outline"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-card-content>
+      </ion-card>
+    
+    </ion-slide>
+  </ion-slides>
+
+<!--<app-explore-container name="Tab 1 page"></app-explore-container>-->
+</ion-content>

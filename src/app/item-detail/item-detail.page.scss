@@ -61,25 +61,24 @@ ion-card{
     border-radius: 0;
     
 }
+.small_card{
+    background-color: white;
+    border-radius: 20px;
+}
 .banner{
     border-radius: 0px 0px 50px 50px;
 }
 .item_tray{
-    overflow: visible!important;
     padding-left: 10px;
+    height: 400px;
 }
 .item{
     width: 250px; height: 150px;
     background-color: white;
     border-radius: 20px;
-    margin-right: 80px;
+    margin-right: 10px;
+    top:+30%;
     overflow: visible!important;
-}
-.item_img{
-    //background: #806251;
-    position: absolute;
-    right: -100px;
-    width: 220px;
 }
 .item_info{
     //background-color: #806251;
@@ -95,6 +94,7 @@ ion-card{
     height: 20px;
     border-radius: 5px;
     font-size: 0.8rem;
+    color: white;
     text-align: center;
 }
 .item_descriptions{
